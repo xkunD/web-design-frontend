@@ -1,0 +1,258 @@
+body {
+  font-family: Verdana, Arial, serif;
+  font-size: 100%;
+  background-color: white;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+header h1 img {
+  margin-top: 1em;
+}
+
+header h2 {
+  border: #fff;
+  border-radius: 25px;
+  background-color: rgb(163, 37, 37);
+  color: rgb(255, 255, 255);
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 5px;
+}
+
+header {
+  background: url(../images/apples-pile-close.jpg) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+nav {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgb(189, 175, 140);
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #765523;
+}
+
+nav ul li a:focus,
+nav ul li a:hover,
+nav ul li a:active {
+  color: #fff;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 15px;
+  font-size: 18px;
+}
+
+nav ul li a {
+  display: block;
+  border: 1px solid;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  margin: 0.25em;
+}
+
+main {
+  max-width: 1200px;
+  min-width: 400px;
+  background-color: #eaddc4ec;
+  font-size: 17px;
+  line-height: 25px;
+  color: #555;
+  margin-left: 1em;
+  margin-right: 1em;
+  border: double 4px #EADDC4;
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+body {
+  background-color: rgb(189, 175, 140);
+}
+
+main img {
+  max-width: 100%;
+}
+
+aside {
+  width: 500px;
+  border: double 4px #EADDC4;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-top: 23px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin: 15px;
+}
+
+aside img {
+  max-width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  color: #EADDC4;
+  background-color: #783F27;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1em;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer ul li {
+  list-style: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+  background-color: #eaddc4ec;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  padding: 40px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1.5;
+  width: 100%;
+  text-align: left;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  color: rgb(180, 112, 23);
+}
+
+h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sidebar {
+  max-width: 800px;
+  margin: 30px;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+}
+
+.sidebar img {
+  max-width: 100%;
+  border-radius: 10px;
+  border-style: double;
+}
+
+/* narrow screen */
+@media (max-width: 800px) {
+  header h2 {
+      border: #fff;
+      border-radius: 25px;
+      background-color: rgb(163, 37, 37);
+      color: rgb(255, 255, 255);
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 5px;
+  }
+
+  .text {
+      margin: 0;
+  }
+
+  .sidebar {
+      margin: 0;
+  }
+
+  .card {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      order: 2;
+  }
+
+  .text {
+      order: 1;
+  }
+
+  nav ul {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .content {
+      flex-direction: column;
+  }
+
+  aside {
+      margin: auto;
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/site.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Academic Projects - Xiaokun Du</title>
+</head>
+
+<body>
+    <header>
+        <!-- Website header with navigation links -->
+        <h1><a href="index.html">👩🏻‍💻 Xiaokun Du's Website</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="academic-projects.html">Academic Projects</a></li>
+                <li><a href="photos.html">Photos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="first-section">
+        <!-- Introduction to the "Academic Projects" section -->
+        <h2>🔧 Academic Projects</h2>
+        <div class="readable">
+            <p>
+                As I am in my third year in the ECE major, I have been exploring many aspects of it and did many
+                interesting projects, including:
+            </p>
+            <ul>
+                <li>Electromagnetic Lifting</li>
+                <li>Automatic Car with Maze</li>
+                <li>Self-made Tin-can Phone</li>
+                <li>Muscle Movement Detector</li>
+                <li>Secret-Message Decoder</li>
+                <li>Digital Power Supply on PCB</li>
+                <li>Computer Network Routing with ns-3</li>
+            </ul>
+            <p>I will keep update the details and the new project I'm going to encounter at Cornell this semester!</p>
+        </div>
+        <!-- Source: (original work) Xiaokun Du-->
+
+    </section>
+
+    <section>
+        <h2>Automatic Car with Maze | May 2022</h2>
+        <!-- Academic project: Automatic Car with Maze -->
+        <div class="readable">
+            <p>
+                In this project, we used arduino to make a simple automatic car that could going through any maze we
+                setted for it. It was achieved with two main parts: sensing and driving.
+            </p>
+            <p>
+                For the sensing, we used pull-up resistors with push buttons for the detection of hard side walls, and
+                employed photodiode with NPN BJT resistors to build up the forward sensing circuit. By continuesly test
+                the performance of the photodiode as well as the push buttons, we could find the suitable values of the
+                resistors in both circuits, as well as the threshold value that should be used in the arduino program.
+            </p>
+            <p>
+                For the driving part, when the robot is close to the wall, it senses the proximity and stops the output
+                to the motor by setting the DIGITAL OUTPUT pin to LOW. When there is no obstruction in front of the
+                robot, the DIGITAL OUTPUT pin is set to HIGH and the robot moves forward. The transistor gets a
+                controlled base current and amplifies it accordingly to achieve 1A current for the motors. Because the
+                robot only moves forwards, we only need to consider the situation when the robot moves forwards and
+                stops moving forwards.
+            </p>
+            <!-- Source: (original work) Xiaokun Du-->
+        </div>
+
+        <figure>
+            <img src="images/academic-car.jpg" alt="A photo of our car going through the maze" width="500" height="375">
+            <figcaption>Our car going through the maze</figcaption>
+            <!-- Source: (original work) Xiaokun Du-->
+        </figure>
+    </section>
+
+
+    <section>
+        <!-- Academic project: Self-made Tin-can Phone -->
+        <h2>Self-made Tin-can Phone | Oct 2022</h2>
+        <div class="readable">
+            <p>
+                This project aims at designing, demonstrating and analysing a tin-can acoustic communication system for
+                speech transmitting. The developed system is made of two paper cups attached to either end with a taut
+                nylon fish string of 2.0 meters length and 0.2mm diameter.
+            </p>
+            <p>
+                According to experiment results, A power gain of above 20 dB was achieved at frequency of 700 - 800 Hz,
+                showing the effective transmission performed by the phone system. Negative power gain appeared with
+                frequency ranging from 1000 to 1600 Hz.
+            </p>
+            <p>
+                In general, the performance of the phone depends on the setting up, cans and the string, and the system
+                performs the most effectively when the frequency of the transmitted sound is around its natural resonant
+                frequency.
+            </p>
+            <!-- Source: (original work) Xiaokun Du-->
+        </div>
+
+        <figure>
+            <img src="images/academic-tincan.jpg" alt="A photo of the measurement of a tin-can phone" width="183"
+                height="195">
+            <figcaption>Measurement of one design of tin-can phone at its recieving side</figcaption>
+            <!-- Source: (original work) Xiaokun Du-->
+        </figure>
+    </section>
+
+
+    <section>
+        <!-- Academic project: Muscle Movement Detector -->
+        <h2>Muscle Movement Detector | Jan 2023</h2>
+        <div class="readable">
+            <p>
+                The Muscle Movement Detector project, undertaken in January 2023, represents a fascinating exploration
+                of biomedical engineering and sensor technology. This innovative project aimed to develop a system
+                capable of detecting and analyzing muscle movements, opening doors to various applications in the fields
+                of healthcare, fitness, and assistive technology.
+            </p>
+            <p>
+                This project involved a multidisciplinary approach, combining digital and analog components. The core of
+                the detector was powered by an MSP432 microcontroller, which served as the digital processing unit. The
+                analog component consisted of carefully designed circuits and sensors for capturing muscle activity.
+            </p>
+            <!-- Source: (original work) Xiaokun Du-->
+        </div>
+
+        <figure>
+            <img src="images/academic-projects-muscle.png" alt="Flow chart of this project design" width="700"
+                height="313">
+            <figcaption>Flow chart of the design of the Muscle Movement Detector</figcaption>
+            <!-- Source: (original work) Xiaokun Du-->
+        </figure>
+
+        <div class="readable">
+            <p>
+                The process of the Muscle Movement Detector can be summarized as follows:
+            </p>
+            <ol>
+                <li>
+                    Sensor Placement: Specialized sensors were strategically placed on the user's skin over the target
+                    muscles. These sensors were designed to measure electrical signals generated by muscle contractions.
+                </li>
+                <li>
+                    Signal Acquisition: The analog circuitry interfaced with the sensors and amplified the minute
+                    electrical signals, making them suitable for digital processing.
+                </li>
+                <li>
+                    Digital Analysis: The MSP432 microcontroller received the amplified signals, processed them in
+                    real-time, and performed various analyses to detect the onset, duration, and intensity of muscle
+                    movements.
+                </li>
+                <li>
+                    Feedback or Data Storage: Depending on the application, the detector could provide immediate
+                    feedback to the user, record data for later analysis, or transmit information to other devices or
+                    systems.
+                </li>
+            </ol>
+            <!-- Source: (original work) Xiaokun Du-->
+        </div>
+
+
+        <figure>
+            <img src="images/academic-muscle-2.jpg" alt="The final design" width="600" height="450">
+            <figcaption>Final design of the whole circuit</figcaption>
+            <!-- Source: (original work) Xiaokun Du-->
+        </figure>
+    </section>
+
+
+
+</body>
+
+</html>

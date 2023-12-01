@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FAQ</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <picture>
+        <!-- Source: Cornell Concert Commission https://blogs.cornell.edu/concerts/ -->
+        <img src="images/logo.png" alt="" width="200">
+      </picture>
+      <button id="ham-button" class="hamButton hidden" aria-label="show navigation">&#9776;</button>
+      <button id="close-ham-button" class="hamButton hidden" aria-label="close navigation">&#x2717;</button>
+    </div>
+
+    <div class="titlemenu">
+      <h1>FAQ</h1>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="upcoming-events-page.html">Upcoming Events</a></li>
+          <li><a href="e-board.html">E-board</a></li>
+          <li><a href="past-events.html">Past Events</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="faq-container">
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li>How can I volunteer for CCC?</li>
+      </ul>
+      <!-- Source: Original Content (Noah Braun) -->
+      <p>You can volunteer by joining! Each time a show is about to happen, the club will send out a volunteer form to
+        all
+        members! To join, come to McGraw Hall room 165 on any Thursday at 5:00pm for a G-Body meeting!</p>
+
+      <ul>
+        <li>How can I submit an artist proposal to CCC?</li>
+      </ul>
+      <!-- Source: Original Content (Noah Braun) -->
+      <p>If you want to suggest an artist, fill out the artist suggestion form! It can be found <a
+          href="https://linktr.ee/cornellconcertspublic">here!</a></p>
+
+      <ul>
+        <li>How can I stay up-to-date on CCC events?</li>
+      </ul>
+      <!-- Source: Original Content (Noah Braun) -->
+      <p>Following our instagram is the best way to stay up-to-date on large-scale club events, but for smaller things
+        such as community events, attending weekly club meetings is the best way to stay involved.</p>
+
+      <ul>
+        <li>How can I give feedback to CCC?</li>
+      </ul>
+      <!-- Source: Original Content (Noah Braun) -->
+      <p>If you have accessibility-related feedback, you can fill out the accessibility form in our linktree. If you
+        have
+        other feedback, you can DM us on instagram or email the relevant eboard member.</p>
+
+      <ul>
+        <li>What are CCC's refund policies?</li>
+      </ul>
+      <!-- Source: Original Content (Noah Braun) -->
+      <p>Unfortunately, since we sell through Cornell’s ticketing system, tickets are non-refundable, as is true for any
+        tickets sold through this site.</p>
+    </div>
+
+    <div class="safety-and-rules">
+      <div class="safety">
+        <h2>Concert Rules and Safety</h2>
+
+        <p>
+          Cornell Concert Commission primarily hosts concerts in two different venues:
+        </p>
+        <p>
+          Barton Hall and Bailey Hall.
+        </p>
+      </div>
+
+      <div class="rules">
+        <h3>Barton Hall</h3>
+
+        <p>Entrance at the front doors ONLY.</p>
+        <p>Only small bags are allowed, and they will be searched at the door.</p>
+        <p>Food and Drinks are not permitted in Barton Hall.</p>
+
+        <h3>Bailey Hall</h3>
+
+        <p>Entrance at the front doors ONLY.</p>
+        <p>Bags are not permitted and will be subject to search if they are brought.</p>
+        <p>Food and Drinks are not permitted in Bailey Hall.</p>
+      </div>
+
+
+      <div class="directions">
+        <h4>Directions</h4>
+        <figure>
+          <div class="imgback">
+            <button id="lightbox" aria-label="open the enlarged map">
+              <img src="/images/CCCmap.png" alt="CCC Map" width="450" height="400"></button>
+          </div>
+
+          <figcaption>
+            Location of Barton and Bailey Hall.
+            Source: <cite><a
+                href="https://www.google.com/maps/d/edit?mid=1yYF-xjuc7-f2fZcEf9MrUR4fwTekXPI&usp=sharing">Google
+                Maps</a></cite>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="modal hidden" id="myModal">
+        <button class="close" aria-label="close modal">&times;</button>
+        <img class="modal-content" src="/images/CCCmap.png" id="img" alt="CCC Map">
+      </div>
+    </div>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/ham-menu.js"></script>
+    <script src="scripts/map-modal.js"></script>
+  </div>
+</body>
+
+</html>

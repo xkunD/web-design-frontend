@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="Home" content="An overview of Cornell Concert Commission">
+    <title>CCC</title>
+    <link rel="stylesheet" type="text/css" href="styles/site.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <picture>
+                <!-- Source: Cornell Concert Commission https://blogs.cornell.edu/concerts/ -->
+                <img src="images/logo.png" alt="" width="200">
+            </picture>
+            <button id="ham-button" class="hamButton hidden" aria-label="show navigation">&#9776;</button>
+            <button id="close-ham-button" class="hamButton hidden" aria-label="close navigation">&#x2717;</button>
+        </div>
+
+        <div class="titlemenu">
+            <h1>Home</h1>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="upcoming-events-page.html">Upcoming Events</a></li>
+                    <li><a href="e-board.html">E-board</a></li>
+                    <li><a href="past-events.html">Past Events</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="carousel">
+
+        <div class="carousel-hov">
+            <button class="left" id="prev-button" aria-label="previous slide">&#10094;</button>
+        </div>
+        <div class="slides">
+            <picture>
+                <!-- Source: CCC Instagram https://www.instagram.com/cornellconcerts -->
+                <img src="images/home-carousel/home-jid.png" alt="">
+            </picture>
+            <div class="caption">J.I.D hands the mic to a student.</div>
+        </div>
+
+        <div class="slides hidden">
+            <picture>
+                <!-- Source: CCC Instagram https://www.instagram.com/cornellconcerts -->
+                <img src="images/home-carousel/home-beachbunny.png" alt="">
+            </picture>
+            <div class="caption">The audience raises their flashlights for Beach Bunny.</div>
+        </div>
+
+        <div class="slides hidden">
+            <picture>
+                <!-- Source: CCC Instagram https://www.instagram.com/cornellconcerts -->
+                <img src="images/home-carousel/home-gratefuldead.png" alt="">
+            </picture>
+            <div class="caption">The Grateful Dead perform at Barton Hall.</div>
+        </div>
+
+        <div class="slides hidden">
+            <picture>
+                <!-- Source: CCC Instagram https://www.instagram.com/cornellconcerts -->
+                <img src="images/home-carousel/home-saintmotel.png" alt="">
+            </picture>
+            <div class="caption">Saint Motel performs at homecoming.</div>
+        </div>
+
+        <div class="slides hidden">
+            <picture>
+                <!-- Source: CCC Instagram https://www.instagram.com/cornellconcerts -->
+                <img src="images/home-carousel/home-yvestumor.png" alt="">
+            </picture>
+            <div class="caption">Yves Tumor steps down to meet the crowd.</div>
+        </div>
+
+        <div class="slides hidden">
+            <picture>
+                <!-- Source: CCC Instagram https://www.instagram.com/cornellconcerts -->
+                <img src="images/home-carousel/home-munilong.png" alt="">
+            </picture>
+            <div class="caption">The crowd cheers for Muni Long.</div>
+        </div>
+
+        <div class="slides hidden">
+            <picture>
+                <!-- Source: CCC Instagram https://www.instagram.com/cornellconcerts -->
+                <img src="images/home-carousel/home-slowpulp.png" alt="">
+            </picture>
+            <div class="caption"><abbr title="Cornell Concert Commission">CCC</abbr> volunteers bond over a Slow Pulp
+                concert.
+            </div>
+        </div>
+
+        <!-- Next button -->
+        <div class="carousel-hov">
+            <button class="right" id="next-button" aria-label="next slide">&#10095;</button>
+        </div>
+
+        </div>
+
+
+    <div class="dots">
+        <span class="feedbackdot active" id="dot1"></span>
+        <span class="feedbackdot" id="dot2"></span>
+        <span class="feedbackdot" id="dot3"></span>
+        <span class="feedbackdot" id="dot4"></span>
+        <span class="feedbackdot" id="dot5"></span>
+        <span class="feedbackdot" id="dot6"></span>
+        <span class="feedbackdot" id="dot7"></span>
+    </div>
+
+
+
+
+
+    <div class="home">
+        <!-- Source: Cornell Concert Commission https://blogs.cornell.edu/concerts/ -->
+        <p>Cornell Concert Commission is the largest music organization on campus, producing shows YOU want to see, such
+            as
+            JID, Avicii, Peach Pit, Playboi Carti, Beach Bunny, Flo Milli, and more!</p>
+
+        <!-- Source: Cornell Concert Commission https://blogs.cornell.edu/concerts/ -->
+        <p>Love music? Want to learn about the industry? Maybe youre craving hands on experience in the entertainment
+            business, or looking for friends in a chill, supportive community! Look no further, because
+            <abbr title="Cornell Concert Commission">CCC</abbr> is the org for you!
+        </p>
+
+        <!-- Source: Cornell Concert Commission https://blogs.cornell.edu/concerts/ -->
+        <p>Meetings are every Thursday at 5:00 PM in 165 McGraw. Lookout for any room changes here or on our social
+            media if
+            you want to join later! To stay up to date on our latest shows, be sure to like our Facebook Page and follow
+            us on
+            Instagram and Twitter!</p>
+    </div>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/ham-menu.js"></script>
+    <script src="scripts/carousel.js"></script>
+</body>
+
+
+
+</html>
